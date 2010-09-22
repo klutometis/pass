@@ -1,0 +1,12 @@
+;;; -*- Hen -*-
+(include "setup-helper")
+
+(verify-extension-name "pass")
+
+(setup-shared-extension-module
+ 'pass
+ (extension-version 0.1))
+
+(install-script
+ 'pass
+ '(("pass-bin.scm" "pass")))

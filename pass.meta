@@ -1,0 +1,10 @@
+((egg "pass.egg")
+ (license "GPL-3")
+ (category parsing)
+ (needs posix format debug with-encrypted-file setup-helper)
+ (test-depends test)
+ (author "Peter Danenberg")
+ (synopsis "Primitive storage mechanism for secrets")
+ (files "pass.scm"
+        "pass.setup"
+        "tests/run.scm"))

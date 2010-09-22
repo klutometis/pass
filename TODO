@@ -1,0 +1,8 @@
+-*- mode: org; -*-
+* TODO copy to clipboard
+  option to xsel the password, say, to the secondary
+  selection. problem is, of course, what to do with multiple results.
+* TODO password caching
+  a la keyring or sudo?
+* TODO keys?
+  which could be optionally passworded, etc.
