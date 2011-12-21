@@ -6,3 +6,4 @@
   a la keyring or sudo?
 * TODO keys?
   which could be optionally passworded, etc.
+* TODO Switch to GPG (in =with-encrypted-file=).
