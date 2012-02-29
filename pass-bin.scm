@@ -1,7 +1,7 @@
 #!/usr/local/bin/csi -s
 (use args pass debug)
 
-(define default-cipherfile "/usr/local/var/pass")
+(define default-cipherfile "~/var/pass")
 
 (define options
   (list (args:make-option
@@ -63,5 +63,6 @@
                             default-dispatcher)
                  (usage))))
         (condition-case
-         (apply dispatcher (cons cipherfile (cdr operands)))
+         (apply dispatcher (cons (normalize-pathname cipherfile)
+                                 (cdr operands)))
          ((exn arity) (usage)))))))
